@@ -8,7 +8,7 @@ setup(
   author = 'Jimmy Atauje',
   author_email = 'jimmy.atauje@gmail.com',
   url = 'https://github.com/jinraynor1/mysql_partition_rotator',
-  download_url = 'https://github.com/jinraynor1/mysql_partition_rotator/archive/v_01.tar.gz',
+  download_url = 'https://github.com/jinraynor1/mysql_partition_rotator/archive/v0.1-alpha.tar.gz',
   keywords = ['mysql', 'partition', 'rotate', 'python'],
   install_requires=[
           'pymysql',
