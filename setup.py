@@ -1,4 +1,9 @@
 from setuptools import setup
+import pathlib
+here = pathlib.Path(__file__).parent.resolve()
+
+long_description = (here / "README.md").read_text(encoding="utf-8")
+here = pathlib.Path(__file__).parent.resolve()
 
 
 setup(
@@ -8,7 +13,7 @@ setup(
     license='MIT',
     description='Rotates mysql tables by using partition method',
     long_description_content_type='text/markdown',
-    long_description="README.md",
+    long_description=long_description,
     author='Jimmy Atauje',
     author_email='jimmy.atauje@gmail.com',
     url='https://github.com/jinraynor1/mysql_partition_rotator',
