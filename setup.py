@@ -9,7 +9,7 @@ here = pathlib.Path(__file__).parent.resolve()
 setup(
     name='mysql_partition_rotator',
     packages=['mysql_partition_rotator'],
-    version='0.2',
+    version='0.3',
     license='MIT',
     description='Rotates mysql tables by using partition method',
     long_description_content_type='text/markdown',
@@ -17,7 +17,7 @@ setup(
     author='Jimmy Atauje',
     author_email='jimmy.atauje@gmail.com',
     url='https://github.com/jinraynor1/mysql_partition_rotator',
-    download_url='https://github.com/jinraynor1/mysql_partition_rotator/releases/tag/v0.2-alpha',
+    download_url='https://github.com/jinraynor1/mysql_partition_rotator/releases/tag/v0.3-alpha',
     keywords=['mysql', 'partition', 'rotate', 'python'],
     install_requires=[
         'pymysql',
