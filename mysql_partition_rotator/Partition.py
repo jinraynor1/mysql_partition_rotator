@@ -1,6 +1,6 @@
 import datetime
 
-from db_partition_rotator.DateHelper import from_days
+from mysql_partition_rotator.DateHelper import from_days
 
 
 class Partition:

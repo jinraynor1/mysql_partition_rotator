@@ -1,4 +1,4 @@
-from db_partition_rotator.DateHelper import to_days, from_days
+from mysql_partition_rotator.DateHelper import to_days, from_days
 from datetime import timedelta
 
 class RotateDaily:

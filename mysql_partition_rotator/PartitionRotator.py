@@ -1,7 +1,7 @@
 import logging
 from datetime import datetime, timezone
-from db_partition_rotator.DateHelper import date_range
-from db_partition_rotator.Partition import Partition
+from mysql_partition_rotator.DateHelper import date_range
+from mysql_partition_rotator.Partition import Partition
 
 
 class PartitionRotator:

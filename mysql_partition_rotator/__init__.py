@@ -1,0 +1,4 @@
+from mysql_partition_rotator.PartitionRotator import PartitionRotator
+from mysql_partition_rotator.RotateDaily import RotateDaily
+from mysql_partition_rotator.RotateHourly import RotateHourly
+from mysql_partition_rotator.RotateMonthly import RotateMonthly

@@ -1,6 +1,3 @@
-from datetime import timedelta
-
-
 def to_days(date):
     return 719528 + int((date / 86400))
 

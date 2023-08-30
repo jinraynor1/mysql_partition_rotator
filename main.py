@@ -8,36 +8,18 @@ import os
 
 from pymysql.cursors import DictCursor
 
-from db_partition_rotator.Partition import Partition
-from db_partition_rotator.PartitionRotator import PartitionRotator
-from db_partition_rotator.RotateDaily import RotateDaily
-from db_partition_rotator.RotateHourly import RotateHourly
+from mysql_partition_rotator.Partition import Partition
+from mysql_partition_rotator.PartitionRotator import PartitionRotator
+from mysql_partition_rotator.RotateDaily import RotateDaily
+from mysql_partition_rotator.RotateHourly import RotateHourly
 
 
 def main():
-
-    r = RotateHourly()
-    d = r.get_partition_date(Partition("from2020100322","7645567"))
-    print(repr(d))
-    sys.exit()
-
-    start_date = datetime.datetime(2022, 3, 1)
-    end_date = datetime.datetime(2022, 3, 10)
-    date_list = []
-
-    delta = datetime.timedelta(hours=12)
-    while start_date <= end_date:
-        date_list.append(start_date)
-        start_date += delta
-    print(date_list)
-
-
-    sys.exit()
-    # Connect to the database
+    # Example code
     connection = pymysql.connect(host='localhost',
-                                 user='jatauje',
-                                 password='jatauje',
-                                 database='tests',
+                                 user='johndoe',
+                                 password='mypass',
+                                 database='test',
                                  cursorclass=DictCursor)
 
     new_time = datetime.datetime.now()
@@ -46,12 +28,13 @@ def main():
     logging.basicConfig(level=logging.INFO)
     logger = logging.getLogger()
 
-
-    pr = PartitionRotator(connection, "tests", "test_rotate_daily", old_time, new_time, rotate_mode, logger)
+    pr = PartitionRotator(database_instance=connection, database_name="tests", table_name="test_rotate_daily",
+                          oldest_partition_time=old_time, newest_partition_time=new_time,
+                          rotate_mode=rotate_mode, logger=logger)
     pr.rotate()
-    a = 1
+
 
 if __name__ == '__main__':
     main()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+

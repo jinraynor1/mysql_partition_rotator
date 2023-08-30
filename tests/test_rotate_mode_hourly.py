@@ -2,7 +2,7 @@ from datetime import datetime
 
 import unittest2
 
-from db_partition_rotator.RotateDaily import RotateDaily
+from mysql_partition_rotator.RotateDaily import RotateDaily
 
 
 class TestRotateHourly(unittest2.TestCase):

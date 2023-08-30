@@ -2,8 +2,8 @@ from datetime import datetime
 
 import unittest2
 
-from db_partition_rotator.RotateDaily import RotateDaily
-from db_partition_rotator.RotateMonthly import RotateMonthly
+from mysql_partition_rotator.RotateDaily import RotateDaily
+from mysql_partition_rotator.RotateMonthly import RotateMonthly
 
 
 class TestRotateMonthly(unittest2.TestCase):

@@ -4,8 +4,8 @@ import pymysql
 import unittest2
 from pymysql.cursors import DictCursor
 
-from db_partition_rotator.PartitionRotator import PartitionRotator
-from db_partition_rotator.RotateDaily import RotateDaily
+from mysql_partition_rotator.PartitionRotator import PartitionRotator
+from mysql_partition_rotator.RotateDaily import RotateDaily
 
 from tests.config import UNIT_TEST
 
