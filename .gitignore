@@ -1,3 +1,6 @@
 venv
 .idea
 config.py
+dist
+MANIFEST
+mysql_partition_rotator.egg-info
