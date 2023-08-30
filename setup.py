@@ -1,8 +1,8 @@
 from distutils.core import setup
 
 setup(
-    name='mysql_partition_rotater',
-    packages=['mysql_partition_rotater'],
+    name='mysql_partition_rotator',
+    packages=['mysql_partition_rotator'],
     version='0.1',
     license='MIT',
     description='Rotates mysql tables by using partition method',
